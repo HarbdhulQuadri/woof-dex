@@ -18,6 +18,7 @@ import {
   SolletExtensionAdapter,
   MathWalletAdapter,
   SolflareExtensionWalletAdapter,
+  Coin98WalletAdapter,
 } from '../wallet-adapters';
 
 const ASSET_URL =
@@ -63,6 +64,13 @@ export const WALLET_PROVIDERS = [
     icon: `${ASSET_URL}/mathwallet.svg`,
     adapter: MathWalletAdapter,
   },
+  {
+    name: 'Coin98',
+    url: 'https://www.coin98.com',
+    icon: 'https://coin98.com/static/media/logo.32cb491a.svg',
+    adapter: Coin98WalletAdapter,
+  },
+  
 ];
 
 const WalletContext = React.createContext<null | WalletContextValues>(null);
