@@ -1,0 +1,3 @@
+    icon: `${ASSET_URL}/mathwallet.svg`,
+
+ 
