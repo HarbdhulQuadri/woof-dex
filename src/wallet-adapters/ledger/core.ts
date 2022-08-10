@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 import type Transport from '@ledgerhq/hw-transport';
 import type { Transaction } from '@solana/web3.js';
 
@@ -86,7 +87,9 @@ export function getSolanaDerivationPath(account?: number, change?: number) {
   if (length > 2) {
     offset = derivationPath.writeUInt32BE(harden(account), offset);
     if (length === 4) {
+      // eslint-disable-next-line
       // @FIXME: https://github.com/project-serum/spl-token-wallet/issues/59
+      // eslint-disable-next-line
       offset = derivationPath.writeUInt32BE(harden(change), offset);
     }
   }
