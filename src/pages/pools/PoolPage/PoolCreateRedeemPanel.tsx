@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-redeclare */
 import { getPoolBasket, PoolInfo, PoolTransactions } from '@project-serum/pool';
 import React, { useMemo, useState } from 'react';
 import FloatingElement from '../../../components/layout/FloatingElement';
